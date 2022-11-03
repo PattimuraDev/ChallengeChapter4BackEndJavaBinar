@@ -22,4 +22,8 @@ public interface SeatsRepository extends JpaRepository<Seats, SeatNumberComposit
             @Param("nomor_baris_kursi") String nomorBarisKursi,
             @Param("nomor_kolom_kursi") String NomorKolomKursi
     );
+
+    //stored_procedure
+    @Query(value = "CALL ALL_SEATS_AVAILABLE()", nativeQuery = true)
+    List<Seats> repoGetAllSeatsAvailable2();
 }
