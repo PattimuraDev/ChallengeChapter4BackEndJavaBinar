@@ -26,16 +26,30 @@ public class FilmsServiceImpl implements FilmsServices{
     @Autowired
     SchedulesRepository schedulesRepository;
 
+    /**
+     * Fungsi yang digunakan untuk add film
+     * @param films paramater objeck film
+     * @return film hasil save
+     */
     @Override
     public Films addFilms(Films films) {
         return filmsRepository.save(films);
     }
 
+    /**
+     * Fungsi untuk get semua film dengan status tayang saat ini
+     * @return semua film yang sedang tayang (list)
+     */
     @Override
     public List<Films> getFilmIsPlaying() {
         return filmsRepository.repoGetFilmIsPlaying();
     }
 
+    /**
+     * Get semua jadwal tersedia untuk film dengan judul tertentu
+     * @param filmName parameter nama film
+     * @return list schedule film terkait
+     */
     @Override
     public List<Schedules> schedulesOfFilmsByName(String filmName) {
         List<Films> listOfAllFilms = filmsRepository.findAll();
@@ -56,15 +70,31 @@ public class FilmsServiceImpl implements FilmsServices{
         return result;
     }
 
+    /**
+     * Fungsi menambah seats
+     * @param seats object seats yang ingin ditambahkan
+     * @return seats hasil penambahan
+     */
     @Override
     public Seats addSeats(Seats seats) {
         return seatsRepository.save(seats);
     }
 
+    /**
+     * Fungsi untuk mengupdate status kursi, apakah sudah dipesan atau belum
+     * @param newStatus parameter untuk mengubah status seats
+     * @param nomorBarisKursi parameter nomor baris dari kursi/seats
+     * @param nomorKolomKursi parameter nomor kolom dari kursi/seats
+     */
     @Override
     public void updateSeats(String newStatus, String nomorBarisKursi, String nomorKolomKursi) {
         seatsRepository.repoUpdateSeats(newStatus, nomorBarisKursi, nomorKolomKursi);
     }
+
+    /**
+     * Fungsi untuk mengambil semua seats dengan status tersedia/belum dipesan
+     * @return list seats dengan status tersedia
+     */
     @Override
     public List<Seats> getAllSeatsAvailable() {
         return seatsRepository.repoGetAllSeatsAvailable();

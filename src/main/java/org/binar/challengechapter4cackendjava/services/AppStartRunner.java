@@ -17,13 +17,20 @@ public class AppStartRunner implements CommandLineRunner {
     @Autowired
     UserServiceImpl userServiceImpl;
 
+    /**
+     * running console
+     * @param args arguments
+     */
     @Override
     public void run(String... args) {
         //initializeDb(); // only run once
-        terminalRunner();
+        consoleRunner();
     }
 
-    private void terminalRunner() {
+    /**
+     * Fungsi untuk menjalankan console
+     */
+    private void consoleRunner() {
         boolean terminalRunning = true;
         int pilihan;
         Scanner input = new Scanner(System.in);
@@ -98,6 +105,9 @@ public class AppStartRunner implements CommandLineRunner {
         }
     }
 
+    /**
+     * Fungsi untuk menampilkan main menu
+     */
     private void mainMenu() {
         System.out.println("=====\n" +
                 "Main Menu\n" +
@@ -111,6 +121,9 @@ public class AppStartRunner implements CommandLineRunner {
         );
     }
 
+    /**
+     * Fungsi untuk menginisialisasi database di awal program dijalankan (dijalankan sekali saja)
+     */
     private void initializeDb() {
         // initialize user table
         ApplicationUsers applicationUsers = new ApplicationUsers(null, "Patra", "patra@email.com", "12345");
