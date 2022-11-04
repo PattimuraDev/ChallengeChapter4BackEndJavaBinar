@@ -3,12 +3,14 @@ package org.binar.ChallengeChapter4BackEndJava.services;
 import org.binar.ChallengeChapter4BackEndJava.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+@Profile("!test")
 @Component
 public class AppStartRunner implements CommandLineRunner {
     @Autowired
@@ -19,6 +21,7 @@ public class AppStartRunner implements CommandLineRunner {
 
     /**
      * running console
+     *
      * @param args arguments
      */
     @Override

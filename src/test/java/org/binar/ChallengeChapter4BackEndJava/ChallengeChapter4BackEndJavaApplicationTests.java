@@ -1,15 +1,16 @@
 package org.binar.ChallengeChapter4BackEndJava;
 
-import org.binar.ChallengeChapter4BackEndJava.repository.FilmsRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
-@SpringBootTest(classes = FilmsRepository.class)
+@ActiveProfiles("test")
+@SpringBootTest
 class ChallengeChapter4BackEndJavaApplicationTests {
 
-	@Test
-	void contextLoads() {
+    @Test
+    void contextLoads() {
 
-	}
+    }
 
 }

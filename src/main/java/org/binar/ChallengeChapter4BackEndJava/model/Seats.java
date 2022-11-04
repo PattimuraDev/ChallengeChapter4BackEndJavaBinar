@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @Entity
 @Table(name = "seats")
-public class Seats{
+public class Seats {
     @EmbeddedId
     private SeatNumberCompositeKey seatNumberCompositeKey;
     private String studioName;

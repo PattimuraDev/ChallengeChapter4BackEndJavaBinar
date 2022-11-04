@@ -16,7 +16,7 @@ import java.util.Objects;
 
 @Service
 @Transactional
-public class FilmsServiceImpl implements FilmsServices{
+public class FilmsServiceImpl implements FilmsServices {
     @Autowired
     FilmsRepository filmsRepository;
 
@@ -28,6 +28,7 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Fungsi yang digunakan untuk add film
+     *
      * @param films paramater objeck film
      * @return film hasil save
      */
@@ -38,6 +39,7 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Fungsi untuk get semua film dengan status tayang saat ini
+     *
      * @return semua film yang sedang tayang (list)
      */
     @Override
@@ -47,6 +49,7 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Get semua jadwal tersedia untuk film dengan judul tertentu
+     *
      * @param filmName parameter nama film
      * @return list schedule film terkait
      */
@@ -54,15 +57,15 @@ public class FilmsServiceImpl implements FilmsServices{
     public List<Schedules> schedulesOfFilmsByName(String filmName) {
         List<Films> listOfAllFilms = filmsRepository.findAll();
         Long filmCode = 0L;
-        for(Films films : listOfAllFilms){
-            if(Objects.equals(films.getFilmName(), filmName)){
+        for (Films films : listOfAllFilms) {
+            if (Objects.equals(films.getFilmName(), filmName)) {
                 filmCode = films.getFilmCode();
             }
         }
         List<Schedules> listOfAllSchedules = schedulesRepository.findAll();
         List<Schedules> result = new ArrayList<>();
-        for(Schedules schedules : listOfAllSchedules){
-            if(Objects.equals(schedules.getFilmsCode(), filmCode)){
+        for (Schedules schedules : listOfAllSchedules) {
+            if (Objects.equals(schedules.getFilmsCode(), filmCode)) {
                 result.add(schedules);
             }
         }
@@ -72,6 +75,7 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Fungsi menambah seats
+     *
      * @param seats object seats yang ingin ditambahkan
      * @return seats hasil penambahan
      */
@@ -82,7 +86,8 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Fungsi untuk mengupdate status kursi, apakah sudah dipesan atau belum
-     * @param newStatus parameter untuk mengubah status seats
+     *
+     * @param newStatus       parameter untuk mengubah status seats
      * @param nomorBarisKursi parameter nomor baris dari kursi/seats
      * @param nomorKolomKursi parameter nomor kolom dari kursi/seats
      */
@@ -93,6 +98,7 @@ public class FilmsServiceImpl implements FilmsServices{
 
     /**
      * Fungsi untuk mengambil semua seats dengan status tersedia/belum dipesan
+     *
      * @return list seats dengan status tersedia
      */
     @Override

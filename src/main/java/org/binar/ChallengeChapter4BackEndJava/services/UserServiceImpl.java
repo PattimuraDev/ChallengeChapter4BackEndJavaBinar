@@ -10,12 +10,13 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Autowired
     ApplicationUsersRepository applicationUsersRepository;
 
     /**
      * Fungsi untuk menambah user
+     *
      * @param users parameter objek user yang ingin ditambahkan
      * @return user yang telah ditambahkan
      */
@@ -26,8 +27,9 @@ public class UserServiceImpl implements UserService{
 
     /**
      * Fungsi untuk mengupdate data user
+     *
      * @param idUser parameter untuk idUser
-     * @param users parameter untuk objek user
+     * @param users  parameter untuk objek user
      * @return user yang sudah diupdate
      */
     @Override
@@ -42,6 +44,7 @@ public class UserServiceImpl implements UserService{
 
     /**
      * Fungsi untuk menghapus delete user
+     *
      * @param idUser parameter untuk id dari user
      * @return boolean, true untuk berhasil, false jika gagal
      */
