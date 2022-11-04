@@ -88,10 +88,8 @@ public class AppStartRunner implements CommandLineRunner {
                     String inputNomorBarisKursi = input.nextLine();
                     System.out.print("Masukkan nomor kolom kursi: ");
                     String inputNomorKolomKursi = input.nextLine();
-                    System.out.print("Masukkan status seat(available/not available): ");
-                    String inputStatusSeat = input.nextLine();
                     filmsServiceImpl.updateSeats(
-                            inputStatusSeat,
+                            "not available",
                             inputNomorBarisKursi,
                             inputNomorKolomKursi
                     );
@@ -103,6 +101,7 @@ public class AppStartRunner implements CommandLineRunner {
                     break;
             }
         }
+        System.exit(0);
     }
 
     /**
