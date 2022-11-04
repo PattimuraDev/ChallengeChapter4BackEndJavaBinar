@@ -1,7 +1,7 @@
-package org.binar.challengechapter4cackendjava.repository;
+package org.binar.ChallengeChapter4BackEndJava.repository;
 
-import org.binar.challengechapter4cackendjava.model.SeatNumberCompositeKey;
-import org.binar.challengechapter4cackendjava.model.Seats;
+import org.binar.ChallengeChapter4BackEndJava.model.SeatNumberCompositeKey;
+import org.binar.ChallengeChapter4BackEndJava.model.Seats;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,4 +1,4 @@
-package org.binar.challengechapter4cackendjava.model;
+package org.binar.ChallengeChapter4BackEndJava.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package org.binar.challengechapter4cackendjava.repository;
+package org.binar.ChallengeChapter4BackEndJava.repository;
 
-import org.binar.challengechapter4cackendjava.model.Schedules;
+import org.binar.ChallengeChapter4BackEndJava.model.Schedules;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

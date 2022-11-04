@@ -1,4 +1,4 @@
-package org.binar.challengechapter4cackendjava;
+package org.binar.ChallengeChapter4BackEndJava;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,6 +1,6 @@
-package org.binar.challengechapter4cackendjava.services;
+package org.binar.ChallengeChapter4BackEndJava.services;
 
-import org.binar.challengechapter4cackendjava.model.ApplicationUsers;
+import org.binar.ChallengeChapter4BackEndJava.model.ApplicationUsers;
 
 public interface UserService {
     ApplicationUsers addUser(ApplicationUsers users);

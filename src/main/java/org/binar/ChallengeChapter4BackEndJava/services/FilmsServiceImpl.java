@@ -1,11 +1,11 @@
-package org.binar.challengechapter4cackendjava.services;
+package org.binar.ChallengeChapter4BackEndJava.services;
 
-import org.binar.challengechapter4cackendjava.model.Films;
-import org.binar.challengechapter4cackendjava.model.Schedules;
-import org.binar.challengechapter4cackendjava.model.Seats;
-import org.binar.challengechapter4cackendjava.repository.FilmsRepository;
-import org.binar.challengechapter4cackendjava.repository.SchedulesRepository;
-import org.binar.challengechapter4cackendjava.repository.SeatsRepository;
+import org.binar.ChallengeChapter4BackEndJava.model.Films;
+import org.binar.ChallengeChapter4BackEndJava.model.Schedules;
+import org.binar.ChallengeChapter4BackEndJava.model.Seats;
+import org.binar.ChallengeChapter4BackEndJava.repository.FilmsRepository;
+import org.binar.ChallengeChapter4BackEndJava.repository.SchedulesRepository;
+import org.binar.ChallengeChapter4BackEndJava.repository.SeatsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

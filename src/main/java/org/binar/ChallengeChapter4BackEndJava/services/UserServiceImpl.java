@@ -1,7 +1,7 @@
-package org.binar.challengechapter4cackendjava.services;
+package org.binar.ChallengeChapter4BackEndJava.services;
 
-import org.binar.challengechapter4cackendjava.model.ApplicationUsers;
-import org.binar.challengechapter4cackendjava.repository.ApplicationUsersRepository;
+import org.binar.ChallengeChapter4BackEndJava.model.ApplicationUsers;
+import org.binar.ChallengeChapter4BackEndJava.repository.ApplicationUsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

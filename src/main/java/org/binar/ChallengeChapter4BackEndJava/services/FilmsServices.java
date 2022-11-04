@@ -1,8 +1,8 @@
-package org.binar.challengechapter4cackendjava.services;
+package org.binar.ChallengeChapter4BackEndJava.services;
 
-import org.binar.challengechapter4cackendjava.model.Films;
-import org.binar.challengechapter4cackendjava.model.Schedules;
-import org.binar.challengechapter4cackendjava.model.Seats;
+import org.binar.ChallengeChapter4BackEndJava.model.Films;
+import org.binar.ChallengeChapter4BackEndJava.model.Schedules;
+import org.binar.ChallengeChapter4BackEndJava.model.Seats;
 
 import java.util.List;
 

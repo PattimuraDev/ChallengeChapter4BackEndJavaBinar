@@ -1,6 +1,6 @@
-package org.binar.challengechapter4cackendjava.services;
+package org.binar.ChallengeChapter4BackEndJava.services;
 
-import org.binar.challengechapter4cackendjava.model.*;
+import org.binar.ChallengeChapter4BackEndJava.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

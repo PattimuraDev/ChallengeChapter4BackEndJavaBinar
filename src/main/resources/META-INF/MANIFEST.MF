@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: org.binar.challengechapter4cackendjava.ChallengeChapter4Back
+Main-Class: org.binar.ChallengeChapter4BackEndJava.ChallengeChapter4Back
  EndJavaApplication
 
